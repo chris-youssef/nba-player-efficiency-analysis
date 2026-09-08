@@ -1,33 +1,39 @@
-Most Efficient High-Usage Scorers (2024–25 NBA Season)
-Methodology:
+# NBA Player Efficiency Analysis
 
-True Shooting Percentage (TS%) was used to measure scoring efficiency.
+Analysis of scoring efficiency among high-usage NBA players during the 2024–25 regular season using Python, Pandas, and Matplotlib.
 
-TS% = (Points) / (2 * (FGA + 0.44(FTA)))
+## Methodology
 
-Raw TS% rankings are often dominated by low-usage big men who primarily score around the rim on high-percentage shots.
+True Shooting Percentage (TS%) was used to measure scoring efficiency:
 
-To identify the most efficient scorers in a superstar context, players were filtered using a minimum field goal attempt threshold: FGA ≥ 1000
+**TS% = Points / (2 × (FGA + 0.44 × FTA))**
 
-This ensures that only high-usage offensive players are included in the analysis.
+Raw TS% rankings are often dominated by lower-usage players who primarily take high-percentage shots. To focus the analysis on high-volume offensive players, players were filtered using a minimum threshold of **1,000 field goal attempts (FGA)**.
 
-Results (2024–25 Regular Season, FGA ≥ 1000):
+## Results
 
-Top 5 Most Efficient High-Usage Scorers:
-1. Nikola Jokić — TS% 0.663
-2. Kevin Durant — TS% 0.642
-3. Zach LaVine — TS% 0.639
-4. Shai Gilgeous-Alexander — TS% 0.637
-5. Karl-Anthony Towns — TS% 0.630
+### Top 5 Most Efficient High-Usage Scorers
 
-Key Findings:
-Nikola Jokić leads all high-volume scorers in efficiency while maintaining elite offensive production.
-The top performers combine shot selection, playmaking, and scoring versatility.
-Filtering by shot volume significantly changes rankings compared to raw TS% leaderboards.
-High-usage efficiency is a better indicator of elite offensive impact than efficiency alone.
+1. Nikola Jokić — TS%: 0.663
+2. Kevin Durant — TS%: 0.642
+3. Zach LaVine — TS%: 0.639
+4. Shai Gilgeous-Alexander — TS%: 0.637
+5. Karl-Anthony Towns — TS%: 0.630
 
-Efficiency vs Volume (2024–25)
+## Key Findings
 
-![Efficiency vs Volume](reports/efficiency_vs_shot_volume_2024_25.png)
+- Nikola Jokić led all high-volume scorers in efficiency while maintaining elite offensive production.
+- The top performers combined shot selection, playmaking, and scoring versatility.
+- Filtering by shot volume significantly changed the rankings compared with raw TS% leaderboards.
+- High-usage efficiency provides a useful way to compare the scoring performance of major offensive players.
 
+## Visualization
 
+![Efficiency vs. Shot Volume](reports/efficiency_vs_shot_volume_2024_25.png)
+
+## Tools Used
+
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
